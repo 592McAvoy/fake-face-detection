@@ -30,7 +30,7 @@ To standardize the evaluation of fake detection methods, we propose **an automat
 
 - Type
 
-  <img src="img\1573540277241.png" alt="1573540277241" style="zoom:70%;" />
+  <img src="img/1573540277241.png" alt="1573540277241" style="zoom:70%;" />
 
 ##### 3. a state-of-the-art forgery detection method tailored to facial manipulations.
 
@@ -749,9 +749,7 @@ detect each manipulation method according to corresponding artifacts
 
   - RGB:  contains the detailed facial information yet is sensitive to illumination
 
-  - MSR: invariant to illumination yet contains less detailed 
-
-    facial information
+  - MSR: invariant to illumination yet contains less detailed facial information
 
 #### II. Method
 

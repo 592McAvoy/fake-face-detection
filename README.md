@@ -64,6 +64,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - capture the **distinct facial expression and movements of a specific person** use Action Unit (AU)
 2. [CVPRW 2019] [Exposing DeepFake Videos By Detecting FaceWarping Artifacts](https://arxiv.org/abs/1811.00656)
    - [code](https://github.com/danmohaha/CVPRW2019_Face_Artifacts); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#cvprw-2019-exposing-deepfake-videos-by-detecting-facewarping-artifacts);
+   - improved version: [DSP-FWA](https://github.com/danmohaha/DSP-FWA)
    - current generated face have **limited resolutions** 
 3. [WIFS 2018] [In Ictu Oculi: Exposing AI Created Fake Videos by Detecting Eye Blinking](https://arxiv.org/abs/1806.02877)
    - [code](https://github.com/danmohaha/WIFS2018_In_Ictu_Oculi); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#wifs-2018-in-ictu-oculi-exposing-ai-created-fake-videos-by-detecting-eye-blinking); 
@@ -125,4 +126,10 @@ some collected paper and personal notes relevant to Fake Face Detetection
 2. [BTAS 2019] [Multi-task Learning for Detecting and Segmenting Manipulated Facial Images and Videos](https://arxiv.org/abs/1906.06876)
    - [code](https://github.com/nii-yamagishilab/ClassNSeg); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#btas-2019-multi-task-learning-for-detecting-and-segmenting-manipulated-facial-images-and-videos); 
    - multi-task learning of  classification(real/fake) and  segmentation(locating manipulated regions in images)
+
+### (6) Frequency Domain
+
+1. [arXiv 2019] [Unmasking DeepFakes with simple Features](https://arxiv.org/abs/1911.00686)
+   - [code](https://github.com/cc-hpc-itwm/DeepFakeDetection); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#arxiv-2019-unmasking-deepfakes-with-simple-features)
+   - image -> **[DFT]** -> sinusoidal components of various frequencies -> **[Azimuthal Average]** -> 1D representation of FFT power spectrum -> **[Classifier]** -> Real/Fake
 

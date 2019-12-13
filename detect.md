@@ -186,6 +186,7 @@ some flaws of forged video:
 
 - [paper](https://arxiv.org/abs/1811.00656)
 - [code](https://github.com/danmohaha/CVPRW2019_Face_Artifacts)
+- improved version: [DSP-FWA: Dual Spatial Pyramid for Exposing Face Warp Artifacts in DeepFake Videos](https://github.com/danmohaha/DSP-FWA)
 
 #### I. Observation
 
@@ -764,3 +765,45 @@ Two Stream Convolutional Neural Network (TSCNN)
 
 - MSR
 - attention 
+
+------
+
+### [arXiv 2019] Unmasking DeepFakes with simple Features
+
+- [paper](https://arxiv.org/abs/1911.00686)
+- [code](https://github.com/cc-hpc-itwm/DeepFakeDetection)
+
+#### I. Observation
+
+- real and fake images behave in noticeable different spectra **at high frequencies**, and therefore they can be easily classified. 
+
+<img src="img/51.png" style="zoom:67%;" />
+
+#### II. Method
+
+<img src="img/52.png" style="zoom:60%;" />
+
+- step 1: Frequency Domain Analysis  
+  - image -> [Discrete Fourier Transform] ->  sinusoidal components of various frequencies -> [ Azimuthal Average ] -> 1D representation of FFT power spectrum
+- step 2: Classification
+  -  Logistic Regression 
+  -  Support Vector Machines (SVM)
+  -  K-Means Clustering 
+
+#### III. Experiment
+
+- the impact of different frequency components
+
+  ![](img/53.png)
+
+-  deepfake images have a noticeably different frequency characteristic.  
+
+  <img src="img/54.png" style="zoom: 80%;" />
+
+  - PS: the standard deviations from the real and the deepfake statistics overlap with each other, meaning that **some samples will be misclassified**. (the accuracy is not satisfying)
+
+#### IV. Comment
+
+- do not dig deep into the reason behind the phenomenon
+- another feature->classification method
+- frequency domain

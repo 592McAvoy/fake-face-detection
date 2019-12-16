@@ -3,8 +3,13 @@ some collected paper and personal notes relevant to Fake Face Detetection
 
 ## Challenge
 
-- [Facebook] [Deepfake Detection Challenge](https://ai.facebook.com/blog/deepfake-detection-challenge/)
-  - unofficial [github repo](https://github.com/drbh/deepfake-detection-challenge)
+- [Facebook] [Deepfake Detection Challenge]( https://www.kaggle.com/c/deepfake-detection-challenge/overview )
+  - [unofficial github repo](https://github.com/drbh/deepfake-detection-challenge)
+
+## Study
+
+1. [arXiv 2019] [Deep Learning for Deepfakes Creation and Detection](https://arxiv.org/abs/1909.11573)
+2. [ACM SIGSAC 2019] [Poster: Towards Robust Open-World Detection of Deepfakes](https://dl.acm.org/citation.cfm?doid=3319535.3363269)
 
 ## I. Dataset
 
@@ -27,7 +32,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
      - real and *DeepFake* synthesized videos having similar visual quality on par with those circulated online 
      - 408 original videos collected from YouTube with subjects of different ages, ethic groups and genders, and 795 DeepFake videos synthesized from these real videos. 
    
-4.  [Facebook] [Deepfake Detection Challenge (DFDC) Dataset](https://deepfakedetectionchallenge.ai/)
+4.  [Facebook] [Deepfake Detection Challenge (DFDC) Dataset]( https://www.kaggle.com/c/deepfake-detection-challenge/data )
 
    - [paper](https://arxiv.org/abs/1910.08854) : [arXiv 2019] The Deepfake Detection Challenge (DFDC) Preview Dataset
 
@@ -54,6 +59,11 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - [paper](https://arxiv.org/abs/1901.02212): [arXiv 2019] FakeCatcher: Detection of Synthetic Portrait Videos using Biological Signals
      - more ''in the wild" portrait videos
      - totaling up to 142 videos,  32 minutes, and 30 GBs 
+   
+8. [Fake Faces in the Wild (FFW) Dataset](http://ali.khodabakhsh.org/research/ffw/)
+
+   - [paper](https://ieeexplore.ieee.org/document/8553251): [BIOSIG 2018] Fake Face Detection Methods: Can They Be Generalized?
+     - more than 53,000 images (from 150 videos)
 
 ## II. Current Work
 
@@ -81,6 +91,10 @@ some collected paper and personal notes relevant to Fake Face Detetection
 7. [WACVW 2019] [Exploiting Visual Artifacts to Expose Deepfakes and Face Manipulations](https://www.semanticscholar.org/paper/Exploiting-Visual-Artifacts-to-Expose-Deepfakes-and-Matern-Riess/3a8939eade51aac810ec89e4b661a7760f31357e#citing-papers)
    - [code](https://github.com/FalkoMatern/Exploiting-Visual-Artifacts); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#wacvw-2019-exploiting-visual-artifacts-to-expose-deepfakes-and-face-manipulations);
    - detect each manipulation method according to corresponding artifacts(eye color inconsistency, hard shadow in nose/contour, missing details in teeth, etc.) 
+8. [ICCVW 2019] [Deepfake Video Detection through Optical Flow Based CNN](http://openaccess.thecvf.com/content_ICCVW_2019/html/HBU/Amerini_Deepfake_Video_Detection_through_Optical_Flow_Based_CNN_ICCVW_2019_paper.html) 
+   -  we propose the adoption of optical flow fields to exploit possible inter-frame dissimilarities. 
+9. [IMVOP 2018]  [Detection of Deepfake Video Manipulation](https://www.researchgate.net/publication/329814168_Detection_of_Deepfake_Video_Manipulation) 
+   - To contribute to a solution, photo response non uniformity (PRNU) analysis is tested for its effectiveness at detecting Deepfake video manipulation
 
 ### (2) CNN-Based 
 
@@ -132,4 +146,3 @@ some collected paper and personal notes relevant to Fake Face Detetection
 1. [arXiv 2019] [Unmasking DeepFakes with simple Features](https://arxiv.org/abs/1911.00686)
    - [code](https://github.com/cc-hpc-itwm/DeepFakeDetection); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#arxiv-2019-unmasking-deepfakes-with-simple-features)
    - image -> **[DFT]** -> sinusoidal components of various frequencies -> **[Azimuthal Average]** -> 1D representation of FFT power spectrum -> **[Classifier]** -> Real/Fake
-

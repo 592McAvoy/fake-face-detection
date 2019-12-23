@@ -40,7 +40,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
 
      - a set of specific metrics to evaluate the performance have been defined and two existing models for detecting deepfakes have been tested to provide a reference perfor-mance baseline.
 
-   <img src="img/50.png" style="zoom:80%;" />
+       <img src="img/50.png" style="zoom:80%;" />
 
 5. [TAMFA (Tampered face)  Dataset](https://www.sciencedirect.com/science/article/pii/S0957417419302350?via%3Dihub) 
 
@@ -65,6 +65,13 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - [paper](https://ieeexplore.ieee.org/document/8553251): [BIOSIG 2018] Fake Face Detection Methods: Can They Be Generalized?
      - more than 53,000 images (from 150 videos)
 
+9.  Swapped Face Detection Dataset
+
+   - [to be released]
+   - [paper](https://arxiv.org/abs/1909.04217): [arXiv 2019] Swapped Face Detection using Deep Learning and Subjective Assessment
+     - A public dataset comprising 86 celebrities using 420,053 images.
+     - This dataset is created using still images, different from other datasets created using video frames that may contain highly correlated images. 
+
 ## II. Current Work
 
 ### (1) Special Artifact-Based
@@ -80,21 +87,21 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - [code](https://github.com/danmohaha/WIFS2018_In_Ictu_Oculi); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#wifs-2018-in-ictu-oculi-exposing-ai-created-fake-videos-by-detecting-eye-blinking); 
    - The **lack of eye blinking** indicates a synthesized video
 4. [ICASSP 2019] [EXPOSING DEEP FAKES USING INCONSISTENT HEAD POSES](https://arxiv.org/abs/1811.00661)
-   - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#icassp-2019-exposing-deep-fakes-using-inconsistent-head-poses); 
+   - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#icassp-2019-exposing-deep-fakes-using-inconsistent-head-poses); [code](https://bitbucket.org/ericyang3721/headpose_forensic/src/master/);
    - the  mismatch between the landmarks at center and outer contour of faked faces is revealed as **inconsistent 3D head poses** estimated from **central** and **whole** facial landmarks 
 5. [arXiv 2019] [FakeCatcher: Detection of Synthetic Portrait Videos using Biological Signals](https://arxiv.org/abs/1901.02212)
    - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#arxiv-2019-fakecatcher-detection-of-synthetic-portrait-videos-using-biological-signals);
    - **biological signals** hidden in portrait videos can be used as an implicit descriptor of authenticity, because they are **neither spatially nor temporally preserved** in fake content. 
 6. [CVPR 2019] [ManTraNet: Manipulation Tracing Network For Detection And Localization of Image](http://openaccess.thecvf.com/content_CVPR_2019/html/Wu_ManTra-Net_Manipulation_Tracing_Network_for_Detection_and_Localization_of_Image_CVPR_2019_paper.html) Forgeries With Anomalous Features
    - [code](https://github.com/ISICV/ManTraNet); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#cvpr-2019-mantranet-manipulation-tracing-network-for-detection-and-localization-of-image-forgeries-with-anomalous-features);
-   - formulate the forgery localization problem as a local anomaly detection problem, design a Z-score feature to capture local anomaly, and propose a novel LSTM solution to assess local anomalies 
+   - formulate the forgery localization problem as a **local anomaly detection** problem, design a Z-score feature to capture local anomaly, and propose a novel LSTM solution to assess local anomalies 
 7. [WACVW 2019] [Exploiting Visual Artifacts to Expose Deepfakes and Face Manipulations](https://www.semanticscholar.org/paper/Exploiting-Visual-Artifacts-to-Expose-Deepfakes-and-Matern-Riess/3a8939eade51aac810ec89e4b661a7760f31357e#citing-papers)
    - [code](https://github.com/FalkoMatern/Exploiting-Visual-Artifacts); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#wacvw-2019-exploiting-visual-artifacts-to-expose-deepfakes-and-face-manipulations);
    - detect each manipulation method according to corresponding artifacts(eye color inconsistency, hard shadow in nose/contour, missing details in teeth, etc.) 
 8. [ICCVW 2019] [Deepfake Video Detection through Optical Flow Based CNN](http://openaccess.thecvf.com/content_ICCVW_2019/html/HBU/Amerini_Deepfake_Video_Detection_through_Optical_Flow_Based_CNN_ICCVW_2019_paper.html) 
-   -  we propose the adoption of optical flow fields to exploit possible inter-frame dissimilarities. 
-9. [IMVOP 2018]  [Detection of Deepfake Video Manipulation](https://www.researchgate.net/publication/329814168_Detection_of_Deepfake_Video_Manipulation) 
-   - To contribute to a solution, photo response non uniformity (PRNU) analysis is tested for its effectiveness at detecting Deepfake video manipulation
+   -  we propose the adoption of **optical flow** fields to exploit possible inter-frame dissimilarities. 
+9. [IMVOP 2018] [Detection of Deepfake Video Manipulation](https://www.researchgate.net/publication/329814168_Detection_of_Deepfake_Video_Manipulation) 
+   - To contribute to a solution, **photo response non uniformity (PRNU) analysis** is tested for its effectiveness at detecting Deepfake video manipulation
 
 ### (2) CNN-Based 
 
@@ -103,7 +110,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - **XceptionNet**
 2. [WIFS 2018] [MesoNet: a Compact Facial Video Forgery Detection Network](https://arxiv.org/abs/1809.00888)
    - [code](https://github.com/DariusAf/MesoNet); [note;](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#wifs-2018-mesonet-a-compact-facial-video-forgery-detection-network)
-   - **MesoNet** exploits features at a **mesoscopic** level leveraging **Inception Module** and **Dilated Convolution**
+   - **MesoNet** exploits features at a **meso-scopic** level leveraging **Inception Module** and **Dilated Convolution**
 3. [ISITC 2018] [Forensics Face Detection From GANs Using Convolutional Neural Network](https://www.researchgate.net/publication/328744832_Forensics_Face_Detection_From_GANs_Using_Convolutional_Neural_Network)
    - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#isitc-2018-forensics-face-detection-from-gans-using-convolutional-neural-network); 
    - **VGGFace** + 2-way FN
@@ -113,6 +120,8 @@ some collected paper and personal notes relevant to Fake Face Detetection
 5. [ICASSP 2019] [Capsule-forensics: Using Capsule Networks to Detect Forged Images and Videos](https://arxiv.org/abs/1910.12467)
    - [code](https://github.com/nii-yamagishilab/Capsule-Forensics); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#icassp-2019-capsule-forensics-using-capsule-networks-to-detect-forged-images-and-videos); 
    - image -> [face extracting & align] -> [VGG19] -> features -> [Capsule Network] -> fake/pristine 
+6. [arXiv 2019] [Swapped Face Detection using Deep Learning and Subjective Assessment](https://arxiv.org/abs/1909.04217)
+   - ResNet18 pretrained on ImageNet 
 
 ### (3) CNN+RNN
 

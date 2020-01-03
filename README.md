@@ -92,9 +92,6 @@ some collected paper and personal notes relevant to Fake Face Detetection
 5. [arXiv 2019] [FakeCatcher: Detection of Synthetic Portrait Videos using Biological Signals](https://arxiv.org/abs/1901.02212)
    - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#arxiv-2019-fakecatcher-detection-of-synthetic-portrait-videos-using-biological-signals);
    - **biological signals** hidden in portrait videos can be used as an implicit descriptor of authenticity, because they are **neither spatially nor temporally preserved** in fake content. 
-6. [CVPR 2019] [ManTraNet: Manipulation Tracing Network For Detection And Localization of Image](http://openaccess.thecvf.com/content_CVPR_2019/html/Wu_ManTra-Net_Manipulation_Tracing_Network_for_Detection_and_Localization_of_Image_CVPR_2019_paper.html) Forgeries With Anomalous Features
-   - [code](https://github.com/ISICV/ManTraNet); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#cvpr-2019-mantranet-manipulation-tracing-network-for-detection-and-localization-of-image-forgeries-with-anomalous-features);
-   - formulate the forgery localization problem as a **local anomaly detection** problem, design a Z-score feature to capture local anomaly, and propose a novel LSTM solution to assess local anomalies 
 7. [WACVW 2019] [Exploiting Visual Artifacts to Expose Deepfakes and Face Manipulations](https://www.semanticscholar.org/paper/Exploiting-Visual-Artifacts-to-Expose-Deepfakes-and-Matern-Riess/3a8939eade51aac810ec89e4b661a7760f31357e#citing-papers)
    - [code](https://github.com/FalkoMatern/Exploiting-Visual-Artifacts); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#wacvw-2019-exploiting-visual-artifacts-to-expose-deepfakes-and-face-manipulations);
    - detect each manipulation method according to corresponding artifacts(eye color inconsistency, hard shadow in nose/contour, missing details in teeth, etc.) 
@@ -112,15 +109,9 @@ some collected paper and personal notes relevant to Fake Face Detetection
 1. [ICCV 2019] [FaceForensics++: Learning to Detect Manipulated Facial Images](https://arxiv.org/abs/1901.08971)
    - [code](https://github.com/ondyari/FaceForensics); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#iccv-2019-faceforensics-learning-to-detect-manipulated-facial-images); 
    - **XceptionNet**
-2. [WIFS 2018] [MesoNet: a Compact Facial Video Forgery Detection Network](https://arxiv.org/abs/1809.00888)
-   - [code](https://github.com/DariusAf/MesoNet); [note;](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#wifs-2018-mesonet-a-compact-facial-video-forgery-detection-network)
-   - **MesoNet** exploits features at a **meso-scopic** level leveraging **Inception Module** and **Dilated Convolution**
 3. [ISITC 2018] [Forensics Face Detection From GANs Using Convolutional Neural Network](https://www.researchgate.net/publication/328744832_Forensics_Face_Detection_From_GANs_Using_Convolutional_Neural_Network)
    - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#isitc-2018-forensics-face-detection-from-gans-using-convolutional-neural-network); 
    - **VGGFace** + 2-way FN
-4. [Expert Systems With Applications 2019] [Face image manipulation detection based on a convolutional neural network](https://www.sciencedirect.com/science/article/pii/S0957417419302350)
-   - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#expert-systems-with-applications-2019-face-image-manipulation-detection-based-on-a-convolutional-neural-network); 
-   - a **customized** convolutional neural network model for Manipulated Face **(MANFA)** &  A **hybrid framework (HF-MANFA)** that uses **Adaptive Boosting (AdaBoost) and eXtreme Gradient Boosting (XGBoost)** to deal with the imbalanced dataset challenge 
 5. [ICASSP 2019] [Capsule-forensics: Using Capsule Networks to Detect Forged Images and Videos](https://arxiv.org/abs/1910.12467)
    - [code](https://github.com/nii-yamagishilab/Capsule-Forensics); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#icassp-2019-capsule-forensics-using-capsule-networks-to-detect-forged-images-and-videos); 
    - image -> [face extracting & align] -> [VGG19] -> features -> [Capsule Network] -> fake/pristine 
@@ -163,3 +154,24 @@ some collected paper and personal notes relevant to Fake Face Detetection
 1. [arXiv 2019] [Unmasking DeepFakes with simple Features](https://arxiv.org/abs/1911.00686)
    - [code](https://github.com/cc-hpc-itwm/DeepFakeDetection); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#arxiv-2019-unmasking-deepfakes-with-simple-features)
    - image -> **[DFT]** -> sinusoidal components of various frequencies -> **[Azimuthal Average]** -> 1D representation of FFT power spectrum -> **[Classifier]** -> Real/Fake
+
+### (7) General image manipulation
+
+1. [CVPR 2019] [ManTraNet: Manipulation Tracing Network For Detection And Localization of Image](http://openaccess.thecvf.com/content_CVPR_2019/html/Wu_ManTra-Net_Manipulation_Tracing_Network_for_Detection_and_Localization_of_Image_CVPR_2019_paper.html) Forgeries With Anomalous Features
+   - [code](https://github.com/ISICV/ManTraNet); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#cvpr-2019-mantranet-manipulation-tracing-network-for-detection-and-localization-of-image-forgeries-with-anomalous-features);
+   - formulate the forgery localization problem as a **local anomaly detection** problem, design a Z-score feature to capture local anomaly, and propose a novel LSTM solution to assess local anomalies 
+2. [arXiv 2019] [Hybrid LSTM and Encoder-Decoder Architecture for Detection of Image Forgeries](https://arxiv.org/abs/1903.02495)
+   - note
+   - This paper proposes a high-confidence **manipulation localization** architecture which utilizes **resampling** features, Long-Short Term Memory (**LSTM**) cells, and **encoder-decoder** network to segment out manipulated regions from non-manipulated ones
+
+### (8) Novel Network or Module
+
+1. [WIFS 2018] [MesoNet: a Compact Facial Video Forgery Detection Network](https://arxiv.org/abs/1809.00888)
+   - [code](https://github.com/DariusAf/MesoNet); [note;](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#wifs-2018-mesonet-a-compact-facial-video-forgery-detection-network)
+   - **MesoNet** exploits features at a **meso-scopic** level leveraging **Inception Module** and **Dilated Convolution**
+2. [Expert Systems With Applications 2019] [Face image manipulation detection based on a convolutional neural network](https://www.sciencedirect.com/science/article/pii/S0957417419302350)
+   - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#expert-systems-with-applications-2019-face-image-manipulation-detection-based-on-a-convolutional-neural-network); 
+   - a **customized** convolutional neural network model for Manipulated Face **(MANFA)** &  A **hybrid framework (HF-MANFA)** that uses **Adaptive Boosting (AdaBoost) and eXtreme Gradient Boosting (XGBoost)** to deal with the imbalanced dataset challenge 
+3. [arXiv 2019] [On the Detection of Digital Face Manipulation](https://arxiv.org/abs/1910.01717)
+   - note
+   - proposed a novel **attention-based layer** to improve classification performance and produce an attention map indicating the manipulated facial regions. 

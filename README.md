@@ -102,8 +102,12 @@ some collected paper and personal notes relevant to Fake Face Detetection
    -  we propose the adoption of **optical flow** fields to exploit possible inter-frame dissimilarities. 
 9. [IMVOP 2018] [Detection of Deepfake Video Manipulation](https://www.researchgate.net/publication/329814168_Detection_of_Deepfake_Video_Manipulation) 
    - To contribute to a solution, **photo response non uniformity (PRNU) analysis** is tested for its effectiveness at detecting Deepfake video manipulation
+10. [arXiv 2019] [Face X-ray for More General Face Forgery Detection](https://arxiv.org/abs/1912.13458)
+    - note
+    - We observe that most existing face manipulation methods share a common step: **blending** the altered face into an existing background image. 
+    - The face X-ray of an input face image is **a greyscale image** that reveals whether the input image can be decomposed into the blending of two images from different sources. 
 
-### (2) CNN-Based 
+### (2) CNN-Based
 
 1. [ICCV 2019] [FaceForensics++: Learning to Detect Manipulated Facial Images](https://arxiv.org/abs/1901.08971)
    - [code](https://github.com/ondyari/FaceForensics); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#iccv-2019-faceforensics-learning-to-detect-manipulated-facial-images); 
@@ -149,6 +153,10 @@ some collected paper and personal notes relevant to Fake Face Detetection
 2. [BTAS 2019] [Multi-task Learning for Detecting and Segmenting Manipulated Facial Images and Videos](https://arxiv.org/abs/1906.06876)
    - [code](https://github.com/nii-yamagishilab/ClassNSeg); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#btas-2019-multi-task-learning-for-detecting-and-segmenting-manipulated-facial-images-and-videos); 
    - multi-task learning of  classification(real/fake) and  segmentation(locating manipulated regions in images)
+3. [arXiv 2019] [Towards Generalizable Forgery Detection with Locality-aware AutoEncoder](https://arxiv.org/abs/1909.05999)
+   - note
+   - To bridge generalization gap, in this paper we propose Locality-aware AutoEn-coder (LAE), which combines fine-grained representation learning and enforcing locality in a unified frame-work. 
+   - A key characteristic of LAE is the **augmented local interpretability**, which could be regularized using **extra pixel wise forgery masks**, in order to learn intrinsic and meaningful forgery representations. 
 
 ### (6) Frequency Domain
 

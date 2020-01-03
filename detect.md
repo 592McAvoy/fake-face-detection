@@ -807,3 +807,79 @@ Two Stream Convolutional Neural Network (TSCNN)
 - do not dig deep into the reason behind the phenomenon
 - another feature->classification method
 - frequency domain
+
+------
+
+### [arXiv 2019] Unmasking DeepFakes with simple Features
+
+- [paper](https://arxiv.org/abs/1912.13458)
+
+#### I. Observation
+
+- most existing face manipulation methods share the common step of blending an altered face into an existing background image, and there exist i**ntrinsic image discrepancies across the blending boundaries.** 
+
+<img src="img/55.png" style="zoom:60%;" />
+
+#### II. Method
+
+- training sample is self-gennerated (same as FaceWarping)
+
+- framework:
+  - part1(HRNet): outputs the face X-ray given an input image
+  - part2: based on the predicted face X-ray, outputs the probabilities of the input image being real or blended. 
+
+#### III. Result
+
+This work shows great generalization ability at unseen manipulation methods
+
+<img src="img/56.png" style="zoom:60%;" />
+
+#### IV. Comment
+
+- great detection performance
+
+- limitations listed by the author:
+
+  - relies on the existence of a blending step. 
+  - suffers from performance drop when encounter low resolution images. 
+
+
+------
+
+### Towards Generalizable Forgery Detection with Locality-aware Auto-Encoder
+
+- [paper](https://arxiv.org/abs/1909.05999)
+
+#### I. Observation
+
+- a desirable detection model should be able to concentrate on the forgery region to learn effective representations. As such, the detection model needs to **possess local interpretability,** which indicates which region is attended by the model to make decisions 
+
+#### II. Method
+
+![](img/57.png)
+
+- Latent space loss: enforce the activation of latent vector $z$ to reflect the true/false label
+- Reconstruction loss:  force the vector $z$ to learn intrinsic representation which could make it better separate fake and true images.
+  - pixel-wise loss: ensure the reconstruction be sound in pixel space
+  - perceptual loss: ensure the reconstruction reliable in the high-level feature space
+  - adversarial loss: ensure the reconstruction look realistic 
+- **Attention loss**:  force the trained model to focus on the manipulated regions to make decisions.
+  - minimizing the distance between individual interpretation map(CAM) and the extra supervision(binary forgery mask) for all the forgery images.  
+- 
+
+- Active learning: 
+  - select top 10 channel which make most contribution to the forgery classification decision
+  - select highest activation images as candidate for forgery mask supervise
+
+#### III. Result
+
+![](img/58.png)
+
+- accuracy in same dataset is not so satisfying
+- only a little bit better generalization ability
+
+#### IV. Comment
+
+- novelty lies in the local interpretability(attention map)
+- not much efficient or accurate
+

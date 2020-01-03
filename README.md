@@ -161,7 +161,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - [code](https://github.com/ISICV/ManTraNet); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#cvpr-2019-mantranet-manipulation-tracing-network-for-detection-and-localization-of-image-forgeries-with-anomalous-features);
    - formulate the forgery localization problem as a **local anomaly detection** problem, design a Z-score feature to capture local anomaly, and propose a novel LSTM solution to assess local anomalies 
 2. [arXiv 2019] [Hybrid LSTM and Encoder-Decoder Architecture for Detection of Image Forgeries](https://arxiv.org/abs/1903.02495)
-   - note
+   - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#arxiv-2019-hybrid-lstm-and-encoder-decoder-architecture-for-detection-of-image-forgeries)
    - This paper proposes a high-confidence **manipulation localization** architecture which utilizes **resampling** features, Long-Short Term Memory (**LSTM**) cells, and **encoder-decoder** network to segment out manipulated regions from non-manipulated ones
 
 ### (8) Novel Network or Module
@@ -173,5 +173,5 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#expert-systems-with-applications-2019-face-image-manipulation-detection-based-on-a-convolutional-neural-network); 
    - a **customized** convolutional neural network model for Manipulated Face **(MANFA)** &  A **hybrid framework (HF-MANFA)** that uses **Adaptive Boosting (AdaBoost) and eXtreme Gradient Boosting (XGBoost)** to deal with the imbalanced dataset challenge 
 3. [arXiv 2019] [On the Detection of Digital Face Manipulation](https://arxiv.org/abs/1910.01717)
-   - note
+   - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#arxiv-2019-on-the-detection-of-digital-face-manipulation)
    - proposed a novel **attention-based layer** to improve classification performance and produce an attention map indicating the manipulated facial regions. 

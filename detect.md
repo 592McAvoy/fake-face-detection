@@ -1,3 +1,5 @@
+
+
 # Fake face Detection
 
 note for papers about deepfakes detection
@@ -942,7 +944,7 @@ This paper proposes a high-confidence **manipulation localization** architecture
 - correctly estimating this spatial information can enable the network to focus on these important spatial regions to make its decision. 
 - The **attention map** is effective at determining the manipulated regions because of the modification of high frequency noise in local patches of an image. 
 
-### II. Method
+#### II. Method
 
 <img src="img/62.png" style="zoom: 80%;" />
 
@@ -980,3 +982,58 @@ A novel **attention-based layer** to improve classification performance and prod
 #### V. Comment
 
 - can utilize this attention module in our method to improve performance
+
+------
+
+### [arXiv 2019] Exploiting Human Social Cognition for the Detection of Fake and Fraudulent Faces via Memory Networks
+
+- [paper](https://arxiv.org/abs/1911.07844)
+
+#### I. Observation
+
+- humans try to predict the observed person’s mental state through visual cues such as their facial expression and by **utilizing specific knowledge stored in the observer’s memories.** 
+- the **lack of social presence and social attributes** cause the uncanny valley effect [13] in the brain when humans view computer generated and tampered media. 
+- CNN based methods tend to overfit to a particular type of artifact, limiting the applicability of these methods for general biometric and security applications. 
+
+#### II. Overview
+
+- We propose a method to detect tampered face images that is **inspired by the human social cognition process**, and uses **joint learning** to predict the future face state, supporting the primary tampered media detection task
+-  a novel **neural memory architecture** for hierarchal semantic embedding propagation and prediction
+-  **adversarial learning** paradigm  
+
+#### III. Method
+
+![](img/64.png)
+
+1. Input Module: extract features from input images using a pre-trained ResNet model trained on ImageNet. 
+
+2. Input level Attention:  we utilise an attention mechanism that learns to **pay varying levels** 
+
+   **of attention to patches** when aggregating local patches into a single query vector
+
+3. **Hierarchical Memory Module**:
+
+   <img src="img/67.png" style="zoom:67%;" />
+
+   - **Patch Level Attention**: summarize each patch of an image that resides in the memory
+     - that eye, lip and cheek regions have a high level of attention to measure the image authenticity. 
+     - <img src="img/66.png" style="zoom:67%;" />
+   - **Memory Output**: encoding with attention to summarize the similarity at the image level. 
+     - HMN provides **higher responses for similar face attribute patterns** that the model has seen in the long-term history.
+     - <img src="img/65.png" style="zoom:67%;" />
+   - **Memory update**
+
+4. Output:
+   - Fake Face Classification
+   - Future Face Semantic Embedding Regression -> Discriminator
+
+#### IV. Performance
+
+unseen attack:
+
+![](img/68.png)
+
+#### V. Comment
+
+- for better generalization ability, we should focus more on correlation
+- attention with bi-GRU

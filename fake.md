@@ -163,3 +163,33 @@ A novel database named Face Synthesis Removal (FSRemovalDB) produced after apply
 
 ------
 
+### [arXiv 2020] DeepFake Variational Auto-Encoder (DF-VAE)
+
+- [arXiv 2020] [DeeperForensics-1.0: A Large-Scale Dataset for Real-World Face Forgery Detection](https://arxiv.org/abs/2001.03024)
+
+#### Method
+
+![](img/69.png)
+
+#####  Disentanglement of structure and appearance
+
+For robust and scalable face reenactment, we should cleanly disentan-gle **structure** (i.e., expression and pose) and **appearance** rep-resentation (i.e., texture, skin color, etc.) of a face. 
+
+1. use the stacked hourglass networks to extract landmarks of $x_t$ in the structure extraction module and get the heat-map.
+2. Then we feed the heat-map to the Structure Encoder, and another source face to the Appearance Encoder .
+3. We concatenate the latent representations (small cubes in red and green) and feed it to the Decoder
+4. Finally, we get the reconstructed face 
+
+#####  Style matching and fusion
+
+masked adaptive instance normalization (**MAdaIN**) module
+
+- We place a typical **AdaIN** network after the reenacted face.
+- In the face swapping scenario, we only need to adjust the style of the face area and use the original back-ground. Therefore, we use a mask mt to guide AdaIN network to focus on style matching of the face area.
+
+ ##### Temporal consistency constraint 
+
+- Temporal discontinuity of fake videos leads to obvious flickering of the face area
+- In order to build the relationship between a current frame and previous ones, we further make an intuitive assumption that the **optical flows should remain unchanged** after recon-struction.
+  -  FlowNet 2.0  
+  - we minimize the difference between ~ xf and xf to improve temporal continuity while keeping stable facial detail generation

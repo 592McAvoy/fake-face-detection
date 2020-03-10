@@ -189,3 +189,15 @@ some collected paper and personal notes relevant to Fake Face Detetection
 4. [arXiv 2019] [Exploiting Human Social Cognition for the Detection of Fake and Fraudulent Faces via Memory Networks](https://arxiv.org/abs/1911.07844)
    - note
    - We propose a **Hierarchical Memory Network (HMN)** architecture, which is able to successfully detect faked faces by utilizing knowledge stored in neural memories as well as visual cues to reason about the perceived face and anticipate its future semantic embeddings.  
+
+### （9） GAN-fake face detection
+
+1. [ICLR 2020 submission] [Real or Fake: An Empirical Study and Improved Model for Fake Face Detection](https://openreview.net/forum?id=HyxcZT4KwB)
+   - propose to introduce **“Gram Block”** into the CNN architecture and propose a novel architecture coined as Gram-Net as shown. The “Gram Block” captures the **global image texture feature** by calculating the **Gram matrix in different semantic level** 
+2. [WIFS 2019] [AutoGAN :  Detecting and Simulating Artifacts in GAN Fake Images](https://arxiv.org/abs/1907.06515)
+   - AutoGAN: which can simulate the artifacts produced by the common pipeline shared by several popular GAN models
+3. [CVPR 2020] [Watch your Up-Convolution: CNN Based Generative Deep Neural Networks are Failing to Reproduce Spectral Distributions](https://arxiv.org/abs/2003.01826)
+   - common up-sampling methods,i.e. known as up-convolution or transposed convolution, are causing the inability of such models to reproduce **spectral distributions** of natural training data correctly
+4. [CVPR 2020] [CNN-generated images are surprisingly easy to spot... for now](https://peterwang512.github.io/CNNDetection/)
+   - with careful pre- and post-processing and data augmentation, a standard image classifier trained on only one specific CNN generator is able to generalize surprisingly well to unseen architectures, datasets, and training methods 
+

@@ -12,6 +12,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
 2. [ACM SIGSAC 2019] [Poster: Towards Robust Open-World Detection of Deepfakes](https://dl.acm.org/citation.cfm?doid=3319535.3363269)
 3. [arXiv 2020] [DeepFakes and Beyond: A Survey of Face Manipulation and Fake Detection](https://arxiv.org/abs/2001.00179)
 4. [arXiv 2019] [Zooming into Face Forensics: A Pixel-level Analysis](https://arxiv.org/abs/1912.05790)
+5. [arXiv 2020] [DeepFake Detection: Current Challenges and Next Steps](https://arxiv.org/abs/2003.09234)
 
 ## I. Dataset
 

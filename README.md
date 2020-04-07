@@ -175,6 +175,10 @@ some collected paper and personal notes relevant to Fake Face Detetection
 2. [arXiv 2019] [Hybrid LSTM and Encoder-Decoder Architecture for Detection of Image Forgeries](https://arxiv.org/abs/1903.02495)
    - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#arxiv-2019-hybrid-lstm-and-encoder-decoder-architecture-for-detection-of-image-forgeries)
    - This paper proposes a high-confidence **manipulation localization** architecture which utilizes **resampling** features, Long-Short Term Memory (**LSTM**) cells, and **encoder-decoder** network to segment out manipulated regions from non-manipulated ones
+3. [CVPR 2018] [Learning Rich Features for Image Manipulation Detection](https://arxiv.org/abs/1805.04953)
+   - [code](https://github.com/pengzhou1108/RGB-N)
+4. [arXiv 2019] [Full-Image Full-Resolution End-to-End-Trainable CNN Framework for Image Forgery Detection](https://arxiv.org/abs/1909.06751)
+   - [code](https://github.com/FrancescoMarra/E2E-ForgeryDetection)
 
 ### (8) Novel Network or Module
 

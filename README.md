@@ -13,6 +13,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
 3. [arXiv 2020] [DeepFakes and Beyond: A Survey of Face Manipulation and Fake Detection](https://arxiv.org/abs/2001.00179)
 4. [arXiv 2019] [Zooming into Face Forensics: A Pixel-level Analysis](https://arxiv.org/abs/1912.05790)
 5. [arXiv 2020] [DeepFake Detection: Current Challenges and Next Steps](https://arxiv.org/abs/2003.09234)
+6. [arXiv 2020] [DeepFakes Evolution: Analysis of Facial Regionsand Fake Detection Performance](https://arxiv.org/abs/2004.07532)
 
 ## I. Dataset
 
@@ -127,6 +128,10 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - image -> [face extracting & align] -> [VGG19] -> features -> [Capsule Network] -> fake/pristine 
 6. [arXiv 2019] [Swapped Face Detection using Deep Learning and Subjective Assessment](https://arxiv.org/abs/1909.04217)
    - ResNet18 pretrained on ImageNet 
+7. [arXiv 2020] [Video Face Manipulation Detection Through Ensemble of CNNs](https://arxiv.org/abs/2004.07676)
+   - [code](https://github.com/polimi-ispl/icpr2020dfdc)
+   - ensemble of CNNs & attention layers  & siamese training
+   - DFDC challenge performance: the final solution proposed by our team was an ensemble of the 4 proposed models, which led us to top3% on the leaderboard computed against the public test set. 
 
 ### (3) CNN+RNN
 
@@ -208,3 +213,6 @@ some collected paper and personal notes relevant to Fake Face Detetection
 
 ### (10) Domain Adaption
 1. [arXiv 2020] [One-Shot Domain Adaptation For Face Generation](https://arxiv.org/abs/2003.12869)
+
+### (11) Metric Learning
+1. [arXiv 2020] [Detecting Deepfakes with Metric Learning](https://arxiv.org/abs/2003.08645)

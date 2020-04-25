@@ -14,6 +14,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
 4. [arXiv 2019] [Zooming into Face Forensics: A Pixel-level Analysis](https://arxiv.org/abs/1912.05790)
 5. [arXiv 2020] [DeepFake Detection: Current Challenges and Next Steps](https://arxiv.org/abs/2003.09234)
 6. [arXiv 2020] [DeepFakes Evolution: Analysis of Facial Regionsand Fake Detection Performance](https://arxiv.org/abs/2004.07532)
+7. [arXiv 2020] [The Creation and Detection of Deepfakes: A Survey](https://arxiv.org/abs/2004.11138)
 
 ## I. Dataset
 
@@ -210,6 +211,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - common up-sampling methods,i.e. known as up-convolution or transposed convolution, are causing the inability of such models to reproduce **spectral distributions** of natural training data correctly
 4. [CVPR 2020] [CNN-generated images are surprisingly easy to spot... for now](https://peterwang512.github.io/CNNDetection/)
    - with careful pre- and post-processing and data augmentation, a standard image classifier trained on only one specific CNN generator is able to generalize surprisingly well to unseen architectures, datasets, and training methods 
+5. [arXiv 2020] [DeepFake Detection by Analyzing Convolutional Traces](https://arxiv.org/abs/2004.10448)
 
 ### (10) Domain Adaption
 1. [arXiv 2020] [One-Shot Domain Adaptation For Face Generation](https://arxiv.org/abs/2003.12869)

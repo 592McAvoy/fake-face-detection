@@ -15,6 +15,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
 5. [arXiv 2020] [DeepFake Detection: Current Challenges and Next Steps](https://arxiv.org/abs/2003.09234)
 6. [arXiv 2020] [DeepFakes Evolution: Analysis of Facial Regionsand Fake Detection Performance](https://arxiv.org/abs/2004.07532)
 7. [arXiv 2020] [The Creation and Detection of Deepfakes: A Survey](https://arxiv.org/abs/2004.11138)
+8. [arXiv 2020] [Preliminary Forensics Analysis of DeepFake Images](https://arxiv.org/abs/2004.12626)
 
 ## I. Dataset
 
@@ -142,6 +143,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
 2. [CVPR 2019] [Recurrent Convolutional Strategies for Face Manipulation Detection in Videos](https://arxiv.org/abs/1905.00582)
    - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#cvpr-2019-recurrent-convolutional-strategies-for-face-manipulation-detection-in-videos); 
    - CNN (DenseNet) + bidirectional RNN
+3. [arxiv 2020] [Deepfakes Detection with Automatic Face Weighting](https://arxiv.org/abs/2004.12027)
 
 ### (4) Two Stream
 

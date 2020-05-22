@@ -134,8 +134,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - [code](https://github.com/polimi-ispl/icpr2020dfdc)
    - ensemble of CNNs & attention layers  & siamese training
    - DFDC challenge performance: the final solution proposed by our team was an ensemble of the 4 proposed models, which led us to top3% on the leaderboard computed against the public test set. 
-8. [arXiv 2020] [Fake Face Detection via Adaptive Residuals Extraction Network](https://arxiv.org/abs/2005.04945)
-   - Novel residual extractor for residual feature extraction
+
 
 ### (3) CNN+RNN
 
@@ -205,6 +204,8 @@ some collected paper and personal notes relevant to Fake Face Detetection
 4. [arXiv 2019] [Exploiting Human Social Cognition for the Detection of Fake and Fraudulent Faces via Memory Networks](https://arxiv.org/abs/1911.07844)
    - note
    - We propose a **Hierarchical Memory Network (HMN)** architecture, which is able to successfully detect faked faces by utilizing knowledge stored in neural memories as well as visual cues to reason about the perceived face and anticipate its future semantic embeddings.  
+5. [arXiv 2020] [Fake Face Detection via Adaptive Residuals Extraction Network](https://arxiv.org/abs/2005.04945)
+   - Novel residual extractor for residual feature extraction
 
 ### (9) GAN-fake face detection
 

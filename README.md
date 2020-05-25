@@ -156,6 +156,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - RGB stream(contain texture details) + MSR stream(illumination invariant) & Attention-based fusion
 3. [arXiv 2019] [Complement Face Forensic Detection and Localization with Facial Landmarks](https://arxiv.org/abs/1910.05455)
    - face landmark + RGB
+4. [ICASSP 2020] [SSTNet: Detecting Manipulated Faces Through Spatial, Steganalysis and Temporal Features](https://ieeexplore.ieee.org/abstract/document/9053969)
 
 ### (5) Auto-encoder
 

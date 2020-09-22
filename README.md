@@ -85,6 +85,10 @@ some collected paper and personal notes relevant to Fake Face Detetection
      - A public dataset comprising 86 celebrities using 420,053 images.
      - This dataset is created using still images, different from other datasets created using video frames that may contain highly correlated images. 
 
+11. Video Forensics HQ
+  - [to be released]
+  - [paper](https://arxiv.org/abs/2005.10360):[arXiv 2020] Video Forensics HQ: Detecting High-quality Manipulated Face Videos
+
 ## II. Current Work
 
 ### (1) Special Artifact-Based
@@ -112,10 +116,12 @@ some collected paper and personal notes relevant to Fake Face Detetection
    -  we propose the adoption of **optical flow** fields to exploit possible inter-frame dissimilarities. 
 9. [IMVOP 2018] [Detection of Deepfake Video Manipulation](https://www.researchgate.net/publication/329814168_Detection_of_Deepfake_Video_Manipulation) 
    - To contribute to a solution, **photo response non uniformity (PRNU) analysis** is tested for its effectiveness at detecting Deepfake video manipulation
-10. [arXiv 2019] [Face X-ray for More General Face Forgery Detection](https://arxiv.org/abs/1912.13458)
+10. [CVPR 2020] [Face X-ray for More General Face Forgery Detection](https://arxiv.org/abs/1912.13458)
     - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#arxiv-2019-unmasking-deepfakes-with-simple-features-1)
     - We observe that most existing face manipulation methods share a common step: **blending** the altered face into an existing background image. 
-    - The face X-ray of an input face image is **a greyscale image** that reveals whether the input image can be decomposed into the blending of two images from different sources. 
+    - The face X-ray of an input face image is **a greyscale image** that reveals whether the input image can be decomposed into the blending of two images from different sources. 6. [arXiv 2020] [DeepFake Detection Based on DiscrepanciesBetween Faces and their Context](https://arxiv.org/abs/2008.12262)
+11. [arXiv 2020] [DeepFake Detection Based on DiscrepanciesBetween Faces and their Context](https://arxiv.org/abs/2008.12262)
+12. [arXiv 2020] [DeepRhythm: Exposing DeepFakes with Attentional VisualHeartbeat Rhythms](https://arxiv.org/abs/2006.07634)
 
 ### (2) CNN-Based
 
@@ -130,13 +136,8 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - image -> [face extracting & align] -> [VGG19] -> features -> [Capsule Network] -> fake/pristine 
 6. [arXiv 2019] [Swapped Face Detection using Deep Learning and Subjective Assessment](https://arxiv.org/abs/1909.04217)
    - ResNet18 pretrained on ImageNet 
-7. [arXiv 2020] [Video Face Manipulation Detection Through Ensemble of CNNs](https://arxiv.org/abs/2004.07676)
-   - [code](https://github.com/polimi-ispl/icpr2020dfdc)
-   - ensemble of CNNs & attention layers  & siamese training
-   - DFDC challenge performance: the final solution proposed by our team was an ensemble of the 4 proposed models, which led us to top3% on the leaderboard computed against the public test set. 
 
-
-### (3) CNN+RNN
+### (3) Video forensics
 
 1. [AVSS 2018] [Deepfake Video Detection Using Recurrent Neural Networks](https://engineering.purdue.edu/~dgueraco/content/deepfake.pdf)
    - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#avss-2018-deepfake-video-detection-using-recurrent-neural-networks);
@@ -145,6 +146,12 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#cvpr-2019-recurrent-convolutional-strategies-for-face-manipulation-detection-in-videos); 
    - CNN (DenseNet) + bidirectional RNN
 3. [arxiv 2020] [Deepfakes Detection with Automatic Face Weighting](https://arxiv.org/abs/2004.12027)
+4. [arXiv 2020] [Video Face Manipulation Detection Through Ensemble of CNNs](https://arxiv.org/abs/2004.07676)
+   - [code](https://github.com/polimi-ispl/icpr2020dfdc)
+   - ensemble of CNNs & attention layers  & siamese training
+   - DFDC challenge performance: the final solution proposed by our team was an ensemble of the 4 proposed models, which led us to top3% on the leaderboard computed against the public test set. 
+5. [arXiv 2020] [Sharp Multiple Instance Learning for DeepFake Video Detection](https://arxiv.org/abs/2008.04585)
+6. [arXiv 2020] [Dynamic texture analysis for detectingfake faces in video sequences](https://arxiv.org/abs/2007.15271)
 
 ### (4) Two Stream
 
@@ -208,9 +215,10 @@ some collected paper and personal notes relevant to Fake Face Detetection
 5. [arXiv 2020] [Fake Face Detection via Adaptive Residuals Extraction Network](https://arxiv.org/abs/2005.04945)
    - Novel residual extractor for residual feature extraction
 
+
 ### (9) GAN-fake face detection
 
-1. [ICLR 2020 submission] [Real or Fake: An Empirical Study and Improved Model for Fake Face Detection](https://openreview.net/forum?id=HyxcZT4KwB)
+1. [CVPR 2020] [Global Texture Enhancement for Fake Face Detection In the Wild](https://doi.org/10.1109/CVPR42600.2020.00808)
    - propose to introduce **“Gram Block”** into the CNN architecture and propose a novel architecture coined as Gram-Net as shown. The “Gram Block” captures the **global image texture feature** by calculating the **Gram matrix in different semantic level** 
 2. [WIFS 2019] [AutoGAN :  Detecting and Simulating Artifacts in GAN Fake Images](https://arxiv.org/abs/1907.06515)
    - AutoGAN: which can simulate the artifacts produced by the common pipeline shared by several popular GAN models
@@ -219,9 +227,12 @@ some collected paper and personal notes relevant to Fake Face Detetection
 4. [CVPR 2020] [CNN-generated images are surprisingly easy to spot... for now](https://peterwang512.github.io/CNNDetection/)
    - with careful pre- and post-processing and data augmentation, a standard image classifier trained on only one specific CNN generator is able to generalize surprisingly well to unseen architectures, datasets, and training methods 
 5. [arXiv 2020] [DeepFake Detection by Analyzing Convolutional Traces](https://arxiv.org/abs/2004.10448)
+6. [arXiv 2020] [Fighting Deepfake by Exposing the ConvolutionalTraces on Images](https://arxiv.org/abs/2008.04095)
+7. [arXiv 2020] [CNN Detection of GAN-Generated Face Imagesbased on Cross-Band Co-occurrences Analysis](https://arxiv.org/abs/2007.12909)
 
-### (10) Domain Adaption
-1. [arXiv 2020] [One-Shot Domain Adaptation For Face Generation](https://arxiv.org/abs/2003.12869)
+### (10) Domain Adaptation
+1. [CVPR 2020] [One-Shot Domain Adaptation For Face Generation](https://arxiv.org/abs/2003.12869)
 
-### (11) Metric Learning
+### (11) Metrics Learning
 1. [arXiv 2020] [Detecting Deepfakes with Metric Learning](https://arxiv.org/abs/2003.08645)
+2. [arXic 2020] [Deep Detection for Face Manipulation](https://arxiv.org/abs/2009.05934)

@@ -184,6 +184,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - [code](https://github.com/cc-hpc-itwm/DeepFakeDetection); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#arxiv-2019-unmasking-deepfakes-with-simple-features)
    - image -> **[DFT]** -> sinusoidal components of various frequencies -> **[Azimuthal Average]** -> 1D representation of FFT power spectrum -> **[Classifier]** -> Real/Fake
 2. [arXiv 2020] [Manipulated Face Detector: Joint Spatial and Frequency Domain Attention Network](https://arxiv.org/abs/2005.02958)
+3. [ECCV 2020] [Thinking in Frequency: Face Forgery Detectionby Mining Frequency-aware Clues](https://link.springer.com/chapter/10.1007%2F978-3-030-58610-2_6)
 
 ### (7) General image manipulation
 

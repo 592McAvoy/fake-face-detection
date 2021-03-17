@@ -185,6 +185,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - image -> **[DFT]** -> sinusoidal components of various frequencies -> **[Azimuthal Average]** -> 1D representation of FFT power spectrum -> **[Classifier]** -> Real/Fake
 2. [arXiv 2020] [Manipulated Face Detector: Joint Spatial and Frequency Domain Attention Network](https://arxiv.org/abs/2005.02958)
 3. [ECCV 2020] [Thinking in Frequency: Face Forgery Detectionby Mining Frequency-aware Clues](https://link.springer.com/chapter/10.1007%2F978-3-030-58610-2_6)
+4. [CVPR 2021] [Spatial-Phase Shallow Learning: Rethinking Face Forgery Detection in Frequency Domain](https://arxiv.org/abs/2103.01856)
 
 ### (7) General image manipulation
 
@@ -215,6 +216,8 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - We propose a **Hierarchical Memory Network (HMN)** architecture, which is able to successfully detect faked faces by utilizing knowledge stored in neural memories as well as visual cues to reason about the perceived face and anticipate its future semantic embeddings.  
 5. [arXiv 2020] [Fake Face Detection via Adaptive Residuals Extraction Network](https://arxiv.org/abs/2005.04945)
    - Novel residual extractor for residual feature extraction
+6. [CVPR 2021] [Multi-attentional Deepfake Detection](https://arxiv.org/abs/2103.02406)
+   - [code repo](https://github.com/yoctta/multiple-attention)
 
 
 ### (9) GAN-fake face detection
@@ -237,4 +240,4 @@ some collected paper and personal notes relevant to Fake Face Detetection
 
 ### (11) Metrics Learning
 1. [arXiv 2020] [Detecting Deepfakes with Metric Learning](https://arxiv.org/abs/2003.08645)
-2. [arXic 2020] [Deep Detection for Face Manipulation](https://arxiv.org/abs/2009.05934)
+2. [arXiv 2020] [Deep Detection for Face Manipulation](https://arxiv.org/abs/2009.05934)

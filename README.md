@@ -234,6 +234,9 @@ some collected paper and personal notes relevant to Fake Face Detetection
 6. [arXiv 2020] [Fighting Deepfake by Exposing the ConvolutionalTraces on Images](https://arxiv.org/abs/2008.04095)
 7. [arXiv 2020] [CNN Detection of GAN-Generated Face Imagesbased on Cross-Band Co-occurrences Analysis](https://arxiv.org/abs/2007.12909)
 8. [Media Watermarking,Security and Forensics 2019] [Detecting GAN generated Fake Images using Co-occurrence Matrices](https://arxiv.org/abs/1903.06836)
+9. [ECCV 2020] [What makes fake images detectable? Understanding properties that generalize](https://arxiv.org/abs/2008.10588)
+   - [code repo](https://github.com/chail/patch-forensics)
+   - [proj page](https://chail.github.io/patch-forensics/)
 
 ### (10) Domain Adaptation
 1. [CVPR 2020] [One-Shot Domain Adaptation For Face Generation](https://arxiv.org/abs/2003.12869)

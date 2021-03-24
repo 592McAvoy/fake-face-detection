@@ -186,6 +186,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
 2. [arXiv 2020] [Manipulated Face Detector: Joint Spatial and Frequency Domain Attention Network](https://arxiv.org/abs/2005.02958)
 3. [ECCV 2020] [Thinking in Frequency: Face Forgery Detectionby Mining Frequency-aware Clues](https://link.springer.com/chapter/10.1007%2F978-3-030-58610-2_6)
 4. [CVPR 2021] [Spatial-Phase Shallow Learning: Rethinking Face Forgery Detection in Frequency Domain](https://arxiv.org/abs/2103.01856)
+5. [CVPR 2021] [Generalizing Face Forgery Detection with High-frequency Features](https://arxiv.org/abs/2103.12376)
 
 ### (7) General image manipulation
 

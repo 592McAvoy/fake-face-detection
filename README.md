@@ -89,6 +89,10 @@ some collected paper and personal notes relevant to Fake Face Detetection
   - [to be released]
   - [paper](https://arxiv.org/abs/2005.10360):[arXiv 2020] Video Forensics HQ: Detecting High-quality Manipulated Face Videos
 
+12. FFIW10KDataset
+  - [CVPR 2021] [Face Forensics in the Wild](https://arxiv.org/abs/2103.16076)
+  - To take face forgery detection to a new level, we construct a novel large-scale dataset, called FFIW10K, which comprises 10,000 high-quality forgery videos, with an average of three  human faces in each frame.
+
 ## II. Current Work
 
 ### (1) Special Artifact-Based
@@ -152,6 +156,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - DFDC challenge performance: the final solution proposed by our team was an ensemble of the 4 proposed models, which led us to top3% on the leaderboard computed against the public test set. 
 5. [arXiv 2020] [Sharp Multiple Instance Learning for DeepFake Video Detection](https://arxiv.org/abs/2008.04585)
 6. [arXiv 2020] [Dynamic texture analysis for detectingfake faces in video sequences](https://arxiv.org/abs/2007.15271)
+7. [ECCV 2020] [Two-branch Recurrent Network for Isolating Deepfakes in Videos](https://arxiv.org/abs/2008.03412)
 
 ### (4) Two Stream
 
@@ -188,6 +193,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
 4. [CVPR 2021] [Spatial-Phase Shallow Learning: Rethinking Face Forgery Detection in Frequency Domain](https://arxiv.org/abs/2103.01856)
 5. [CVPR 2021] [Generalizing Face Forgery Detection with High-frequency Features](https://arxiv.org/abs/2103.12376)
 
+
 ### (7) General image manipulation
 
 1. [CVPR 2019] [ManTraNet: Manipulation Tracing Network For Detection And Localization of Image](http://openaccess.thecvf.com/content_CVPR_2019/html/Wu_ManTra-Net_Manipulation_Tracing_Network_for_Detection_and_Localization_of_Image_CVPR_2019_paper.html) Forgeries With Anomalous Features
@@ -200,6 +206,8 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - [code](https://github.com/pengzhou1108/RGB-N)
 4. [arXiv 2019] [Full-Image Full-Resolution End-to-End-Trainable CNN Framework for Image Forgery Detection](https://arxiv.org/abs/1909.06751)
    - [code](https://github.com/FrancescoMarra/E2E-ForgeryDetection)
+5. [CVPR 2021] [Closer Look at Fourier Spectrum Discrepancies for CNN-generated Images Detection](https://arxiv.org/abs/2103.17195)
+   - [code](https://keshik6.github.io/Fourier-Discrepancies-CNN-Detection/)
 
 ### (8) Novel Network or Module
 
@@ -245,3 +253,4 @@ some collected paper and personal notes relevant to Fake Face Detetection
 ### (11) Metrics Learning
 1. [arXiv 2020] [Detecting Deepfakes with Metric Learning](https://arxiv.org/abs/2003.08645)
 2. [arXiv 2020] [Deep Detection for Face Manipulation](https://arxiv.org/abs/2009.05934)
+3. [CVPR 2021] [Frequency-aware Discriminative Feature Learning Supervised by Single-Center Loss for Face Forgery Detection](https://arxiv.org/abs/2103.09096)

@@ -206,8 +206,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - [code](https://github.com/pengzhou1108/RGB-N)
 4. [arXiv 2019] [Full-Image Full-Resolution End-to-End-Trainable CNN Framework for Image Forgery Detection](https://arxiv.org/abs/1909.06751)
    - [code](https://github.com/FrancescoMarra/E2E-ForgeryDetection)
-5. [CVPR 2021] [Closer Look at Fourier Spectrum Discrepancies for CNN-generated Images Detection](https://arxiv.org/abs/2103.17195)
-   - [code](https://keshik6.github.io/Fourier-Discrepancies-CNN-Detection/)
+
 
 ### (8) Novel Network or Module
 
@@ -246,6 +245,8 @@ some collected paper and personal notes relevant to Fake Face Detetection
 9. [ECCV 2020] [What makes fake images detectable? Understanding properties that generalize](https://arxiv.org/abs/2008.10588)
    - [code repo](https://github.com/chail/patch-forensics)
    - [proj page](https://chail.github.io/patch-forensics/)
+10. [CVPR 2021] [Closer Look at Fourier Spectrum Discrepancies for CNN-generated Images Detection](https://arxiv.org/abs/2103.17195)
+   - [code](https://keshik6.github.io/Fourier-Discrepancies-CNN-Detection/)
 
 ### (10) Domain Adaptation
 1. [CVPR 2020] [One-Shot Domain Adaptation For Face Generation](https://arxiv.org/abs/2003.12869)

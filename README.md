@@ -154,10 +154,9 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - [code](https://github.com/polimi-ispl/icpr2020dfdc)
    - ensemble of CNNs & attention layers  & siamese training
    - DFDC challenge performance: the final solution proposed by our team was an ensemble of the 4 proposed models, which led us to top3% on the leaderboard computed against the public test set. 
-5. [arXiv 2020] [Sharp Multiple Instance Learning for DeepFake Video Detection](https://arxiv.org/abs/2008.04585)
+5. [ACM MM 2020] [Sharp Multiple Instance Learning for DeepFake Video Detection](https://arxiv.org/abs/2008.04585)
 6. [arXiv 2020] [Dynamic texture analysis for detectingfake faces in video sequences](https://arxiv.org/abs/2007.15271)
 7. [ECCV 2020] [Two-branch Recurrent Network for Isolating Deepfakes in Videos](https://arxiv.org/abs/2008.03412)
-8. [ACM MM 2020][Sharp Multiple Instance Learning for DeepFake Video Detection](https://arxiv.org/abs/2008.04585)
 
 ### (4) Two Stream
 

@@ -229,7 +229,6 @@ some collected paper and personal notes relevant to Fake Face Detetection
 
 
 ### (9) GAN-fake face detection
-
 1. [CVPR 2020] [Global Texture Enhancement for Fake Face Detection In the Wild](https://doi.org/10.1109/CVPR42600.2020.00808)
    - propose to introduce **“Gram Block”** into the CNN architecture and propose a novel architecture coined as Gram-Net as shown. The “Gram Block” captures the **global image texture feature** by calculating the **Gram matrix in different semantic level** 
 2. [WIFS 2019] [AutoGAN :  Detecting and Simulating Artifacts in GAN Fake Images](https://arxiv.org/abs/1907.06515)
@@ -255,3 +254,12 @@ some collected paper and personal notes relevant to Fake Face Detetection
 1. [arXiv 2020] [Detecting Deepfakes with Metric Learning](https://arxiv.org/abs/2003.08645)
 2. [arXiv 2020] [Deep Detection for Face Manipulation](https://arxiv.org/abs/2009.05934)
 3. [CVPR 2021] [Frequency-aware Discriminative Feature Learning Supervised by Single-Center Loss for Face Forgery Detection](https://arxiv.org/abs/2103.09096)
+
+### (12) Transformer
+1. [arXiv 2021] [M2TR: Multi-modal Multi-scale Transformers for Deepfake Detection](https://arxiv.org/abs/2104.09770)
+
+### (13) Adversarial Attack/Defend
+1. [WACV 2021] [Adversarial Deepfakes: Evaluating Vulnerability of Deepfake Detectors to Adversarial Examples](https://arxiv.org/abs/2002.12749)
+2. [IJCNN 2020] [Adversarial Perturbations Fool Deepfake Detectors](https://arxiv.org/abs/2003.10596)
+3. [CVPR 2021] [MagDR: Mask-guided Detection and Reconstruction for Defending Deepfakes](https://arxiv.org/abs/2103.14211)
+4. [arXiv 2021] [Deepfake Forensics via An Adversarial Game](https://arxiv.org/abs/2103.13567)

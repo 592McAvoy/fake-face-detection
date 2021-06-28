@@ -248,6 +248,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
 10. [CVPR 2021] [Closer Look at Fourier Spectrum Discrepancies for CNN-generated Images Detection](https://arxiv.org/abs/2103.17195)
    - [code](https://keshik6.github.io/Fourier-Discrepancies-CNN-Detection/)
 11. [IJCAI2021] [Beyond the Spectrum: Detecting Deepfakes via Re-Synthesis](https://arxiv.org/abs/2105.14376)
+12. [arXiv 2021] [Wavelet-Packet Powered Deepfake Image Detection](https://arxiv.org/abs/2106.09369)
 
 ### (10) Domain Adaptation
 1. [CVPR 2020] [One-Shot Domain Adaptation For Face Generation](https://arxiv.org/abs/2003.12869)

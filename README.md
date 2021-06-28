@@ -157,6 +157,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
 5. [ACM MM 2020] [Sharp Multiple Instance Learning for DeepFake Video Detection](https://arxiv.org/abs/2008.04585)
 6. [arXiv 2020] [Dynamic texture analysis for detectingfake faces in video sequences](https://arxiv.org/abs/2007.15271)
 7. [ECCV 2020] [Two-branch Recurrent Network for Isolating Deepfakes in Videos](https://arxiv.org/abs/2008.03412)
+8. [arXiv 2021] [Detection of Deepfake Videos Using Long Distance Attention](https://arxiv.org/abs/2106.12832)
 
 ### (4) Two Stream
 

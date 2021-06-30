@@ -140,6 +140,8 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - image -> [face extracting & align] -> [VGG19] -> features -> [Capsule Network] -> fake/pristine 
 6. [arXiv 2019] [Swapped Face Detection using Deep Learning and Subjective Assessment](https://arxiv.org/abs/1909.04217)
    - ResNet18 pretrained on ImageNet 
+7. [arXiv 2018] [On Detecting GANs and Retouching based Synthetic Alterations](https://arxiv.org/abs/1901.09237)
+   - Patch based deep Convolutional neural network to detect deepfake images generated using StarGAN. 
 
 ### (3) Video forensics
 

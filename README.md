@@ -96,7 +96,6 @@ some collected paper and personal notes relevant to Fake Face Detetection
 ## II. Current Work
 
 ### (1) Special Artifact-Based
-
 1. [CVPRW 2019] [Protecting World Leaders Against Deep Fakes](http://openaccess.thecvf.com/content_CVPRW_2019/papers/Media%20Forensics/Agarwal_Protecting_World_Leaders_Against_Deep_Fakes_CVPRW_2019_paper.pdf)
    - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#cvprw-2019-protecting-world-leaders-against-deep-fakes);
    - capture the **distinct facial expression and movements of a specific person** use Action Unit (AU)
@@ -128,7 +127,6 @@ some collected paper and personal notes relevant to Fake Face Detetection
 12. [arXiv 2020] [DeepRhythm: Exposing DeepFakes with Attentional VisualHeartbeat Rhythms](https://arxiv.org/abs/2006.07634)
 
 ### (2) CNN-Based
-
 1. [ICCV 2019] [FaceForensics++: Learning to Detect Manipulated Facial Images](https://arxiv.org/abs/1901.08971)
    - [code](https://github.com/ondyari/FaceForensics); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#iccv-2019-faceforensics-learning-to-detect-manipulated-facial-images); 
    - **XceptionNet**
@@ -140,9 +138,9 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - image -> [face extracting & align] -> [VGG19] -> features -> [Capsule Network] -> fake/pristine 
 6. [arXiv 2019] [Swapped Face Detection using Deep Learning and Subjective Assessment](https://arxiv.org/abs/1909.04217)
    - ResNet18 pretrained on ImageNet 
+7. [CVPR 2021] [Lips Don't Lie: A Generalisable and Robust Approach To Face Forgery Detection](https://openaccess.thecvf.com/content/CVPR2021/html/Haliassos_Lips_Dont_Lie_A_Generalisable_and_Robust_Approach_To_Face_CVPR_2021_paper.html)
 
 ### (3) Video forensics
-
 1. [AVSS 2018] [Deepfake Video Detection Using Recurrent Neural Networks](https://engineering.purdue.edu/~dgueraco/content/deepfake.pdf)
    - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#avss-2018-deepfake-video-detection-using-recurrent-neural-networks);
    - CNN (InceptionV3) + LSTM
@@ -160,7 +158,6 @@ some collected paper and personal notes relevant to Fake Face Detetection
 8. [arXiv 2021] [Detection of Deepfake Videos Using Long Distance Attention](https://arxiv.org/abs/2106.12832)
 
 ### (4) Two Stream
-
 1. [CVPRW 2017] [Two-Stream Neural Networks for Tampered Face Detection](https://www.semanticscholar.org/paper/Two-Stream-Neural-Networks-for-Tampered-Face-Zhou-Han/5c04b3178af0cc5f367c833030c118701c210229#paper-header)
    - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#cvprw-2017-two-stream-neural-networks-for-tampered-face-detection);
    - Face Classification stream(GoogLeNet) + Patch Triplet stream(Steganalysis feature)
@@ -172,7 +169,6 @@ some collected paper and personal notes relevant to Fake Face Detetection
 4. [ICASSP 2020] [SSTNet: Detecting Manipulated Faces Through Spatial, Steganalysis and Temporal Features](https://ieeexplore.ieee.org/abstract/document/9053969)
 
 ### (5) Auto-encoder
-
 1. [arXiv 2018] [ForensicTransfer: Weakly-supervised Domain Adaptation for Forgery Detection](https://arxiv.org/abs/1812.02510)
    - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#arxiv-2018-forensictransfer-weakly-supervised-domain-adaptation-for-forgery-detection);
    - input image -> [Encoder] -> **Forensic Embedding** -> [Decoder] -> reconstructed image 
@@ -185,7 +181,6 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - A key characteristic of LAE is the **augmented local interpretability**, which could be regularized using **extra pixel wise forgery masks**, in order to learn intrinsic and meaningful forgery representations. 
 
 ### (6) Frequency Domain
-
 1. [arXiv 2019] [Unmasking DeepFakes with simple Features](https://arxiv.org/abs/1911.00686)
    - [code](https://github.com/cc-hpc-itwm/DeepFakeDetection); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#arxiv-2019-unmasking-deepfakes-with-simple-features)
    - image -> **[DFT]** -> sinusoidal components of various frequencies -> **[Azimuthal Average]** -> 1D representation of FFT power spectrum -> **[Classifier]** -> Real/Fake
@@ -196,7 +191,6 @@ some collected paper and personal notes relevant to Fake Face Detetection
 
 
 ### (7) General image manipulation
-
 1. [CVPR 2019] [ManTraNet: Manipulation Tracing Network For Detection And Localization of Image](http://openaccess.thecvf.com/content_CVPR_2019/html/Wu_ManTra-Net_Manipulation_Tracing_Network_for_Detection_and_Localization_of_Image_CVPR_2019_paper.html) Forgeries With Anomalous Features
    - [code](https://github.com/ISICV/ManTraNet); [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#cvpr-2019-mantranet-manipulation-tracing-network-for-detection-and-localization-of-image-forgeries-with-anomalous-features);
    - formulate the forgery localization problem as a **local anomaly detection** problem, design a Z-score feature to capture local anomaly, and propose a novel LSTM solution to assess local anomalies 
@@ -208,9 +202,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
 4. [arXiv 2019] [Full-Image Full-Resolution End-to-End-Trainable CNN Framework for Image Forgery Detection](https://arxiv.org/abs/1909.06751)
    - [code](https://github.com/FrancescoMarra/E2E-ForgeryDetection)
 
-
 ### (8) Novel Network or Module
-
 1. [WIFS 2018] [MesoNet: a Compact Facial Video Forgery Detection Network](https://arxiv.org/abs/1809.00888)
    - [code](https://github.com/DariusAf/MesoNet); [note;](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#wifs-2018-mesonet-a-compact-facial-video-forgery-detection-network)
    - **MesoNet** exploits features at a **meso-scopic** level leveraging **Inception Module** and **Dilated Convolution**
@@ -227,7 +219,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - Novel residual extractor for residual feature extraction
 6. [CVPR 2021] [Multi-attentional Deepfake Detection](https://arxiv.org/abs/2103.02406)
    - [code repo](https://github.com/yoctta/multiple-attention)
-
+7. [CVPR 2021] [Representative Forgery Mining for Fake Face Detection](https://openaccess.thecvf.com/content/CVPR2021/html/Wang_Representative_Forgery_Mining_for_Fake_Face_Detection_CVPR_2021_paper.html)
 
 ### (9) GAN-fake face detection
 1. [CVPR 2020] [Global Texture Enhancement for Fake Face Detection In the Wild](https://doi.org/10.1109/CVPR42600.2020.00808)
@@ -267,3 +259,6 @@ some collected paper and personal notes relevant to Fake Face Detetection
 2. [IJCNN 2020] [Adversarial Perturbations Fool Deepfake Detectors](https://arxiv.org/abs/2003.10596)
 3. [CVPR 2021] [MagDR: Mask-guided Detection and Reconstruction for Defending Deepfakes](https://arxiv.org/abs/2103.14211)
 4. [arXiv 2021] [Deepfake Forensics via An Adversarial Game](https://arxiv.org/abs/2103.13567)
+
+### (14) 3D Model
+1. [CVPR 2021] [Face Forgery Detection by 3D Decomposition](https://openaccess.thecvf.com/content/CVPR2021/html/Zhu_Face_Forgery_Detection_by_3D_Decomposition_CVPR_2021_paper.html)
